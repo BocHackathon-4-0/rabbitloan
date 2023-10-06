@@ -2,3 +2,20 @@
     max-width: 300px;
     margin: auto;
   }
+
+  header.p-3.text-bg-dark{
+    background-color: transparent !important;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+  }
+
+  .Rabbit{
+    position: absolute;
+    z-index: 9999;
+    left: 37%;
+    top: 38%;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+  }

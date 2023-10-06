@@ -1,33 +1,83 @@
-<div class="submit-form">
-    <div *ngIf="!submitted">
-      <div class="form-group">
-        <label for="title">Title</label>
-        <input
-          type="text"
-          class="form-control"
-          id="title"
-          required
-          [(ngModel)]="tutorial.title"
-          name="title"
-        />
-      </div>
-  
-      <div class="form-group">
-        <label for="description">Description</label>
-        <input
-          class="form-control"
-          id="description"
-          required
-          [(ngModel)]="tutorial.description"
-          name="description"
-        />
-      </div>
-  
-      <button (click)="saveTutorial()" class="btn btn-success">Submit</button>
+  <header class="p-3 text-bg-dark">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a routerLink="/second-component" class="nav-link px-2 text-white">Loans</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+        </ul>     
+       </div>
     </div>
-  
-    <div *ngIf="submitted">
-      <h4>You submitted successfully!</h4>
-      <button class="btn btn-success" (click)="newTutorial()">Add</button>
-    </div>
+  </header>
+
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://slimtechnologies.co/uploads/slider.jpg" class="d-block w-100" height="500px">
+        <h2 class="Rabbit">Introducing Rabbit Loan</h2>
+      </div>
+     </div> 
   </div>
+
+  
+  <div class="mt-5"></div>
+    <div class="container text-center">
+        <div class="row align-items-start">
+          <div class="col">
+            <div class="card" style="width: 25rem;">
+                <img src="/assets/microloans.jpg" class="card-img-top" alt="..." height="300px">
+                <div class="card-body">
+                  <h5 class="card-title">Microloan</h5>
+                  <p class="card-text">These loans are typically of relatively low value, making them accessible to a wide range of borrowers, including those who may not qualify for traditional bank loans. Microloans are known for their simplified application processes and quicker approval times, making them an ideal 
+                    solution for people facing urgent financial needs, such as covering unexpected expenses or capitalizing on time-sensitive opportunities</p>
+                  <a routerLink="/second-component" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 25rem;">
+                <img src="/assets/startups.jpg" class="card-img-top" alt="..." height="300px">
+                <div class="card-body">
+                  <h5 class="card-title">Start Up</h5>
+                  <p class="card-text"> This type of financing provides a rapid injection of capital to help new 
+                    ventures get off the ground swiftly. It's specifically tailored to cover the initial costs of incorporation, product development, marketing, and other essential startup expenses. 
+                    Whether it's launching a tech startup, a small restaurant, or any other business endeavor, a startup loan can be the catalyst 
+                    that transforms vision into reality.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 25rem;">
+                <img src="/assets/corporate.jpg" class="card-img-top" alt="..." height="300px">
+                <div class="card-body">
+                  <h5 class="card-title">Corporate</h5>
+                  <p class="card-text">Corporate loans are financial instruments designed to meet the capital needs of established businesses and corporations. These loans serve as a vital resource for companies to fund various aspects of their operations, such as expansion, working capital, equipment purchases, or debt refinancing. Unlike personal loans, corporate loans are tailored to meet the specific financial requirements and creditworthiness of the company.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="mt-5"></div>
+      <div class="mt-5"></div>
+
+      
+      <div class="container jumbotron">
+        <h1 class="display-4">Already a Jinius Customer!</h1>
+        <p class="lead">You are in a for a treat ! Give us your request and your loan request we land in your account. </p>
+        <hr class="my-4">
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="#" role="button">Lets get you funded</a>
+        </p>
+      </div>
+      
+      
