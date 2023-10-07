@@ -18,4 +18,44 @@
     color: white;
     text-align: center;
     font-size: 50px;
+    font-family: Nixie One,cursive;
+  }
+
+  .Rabbit-1{
+    position: absolute;
+    z-index: 9999;
+    left: 37%;
+    top: 48%;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family: Nixie One,cursive;
+  }
+
+  .Rabbit-2{
+    position: absolute;
+    z-index: 9999;
+    left: 37%;
+    top: 58%;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: Nixie One,cursive;
+  }
+
+  .r-header {
+      margin: 0;
+        padding: 0;
+        /* Set the height of the header to 100% of the viewport height */
+        height: 100vh !important;
+  }
+
+  .st-line{
+    display: block;
+    width: 375px;
+    border-top: 5px solid hsl(0, 0%, 100%);
+    margin-bottom: 3%;
+    position: absolute;
+    left: 37%;
+    top: 65%;
   }

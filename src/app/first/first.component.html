@@ -1,4 +1,4 @@
-  <header class="p-3 text-bg-dark">
+  <header class=" p-3 text-bg-dark">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
@@ -6,9 +6,9 @@
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a routerLink="/second-component" class="nav-link px-2 text-white">Loans</a></li>
+          <!-- <li><a class="nav-link px-2 text-white">Loans</a></li> -->
           <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+          <!-- <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li> -->
           <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
           <li><a href="#" class="nav-link px-2 text-white">About</a></li>
         </ul>     
@@ -16,17 +16,21 @@
     </div>
   </header>
 
-  <div id="carouselExample" class="carousel slide">
+  <div id="carouselExample" class="carousel slide r-header">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="https://slimtechnologies.co/uploads/slider.jpg" class="d-block w-100" height="500px">
-        <h2 class="Rabbit">Introducing Rabbit Loan</h2>
-      </div>
+        <img src="https://slimtechnologies.co/uploads/slider.jpg" class="d-block w-100">
+        <h2 class="Rabbit">Introducing  <img src="https://rabbitloan.saturn-digital.com/assets/LOGO.png" alt=""> </h2>
+        <h3 class="Rabbit-1">Powered by    <img height="50px" src="https://business.jinius.com.cy/wp-content/themes/jinius/img/jinius_logo_v.svg" alt=""></h3>
+        <a routerLink="/second-component"><h4 class="Rabbit-2">Lets get you some funding</h4></a>
+        <div class="st-line"></div>
+        </div>
      </div> 
+     
   </div>
 
   
-  <div class="mt-5"></div>
+  <!-- <div class="mt-5"></div>
     <div class="container text-center">
         <div class="row align-items-start">
           <div class="col">
@@ -80,4 +84,56 @@
         </p>
       </div>
       
+       -->
+
+       <!-- <div class="submit-form">
+        <div *ngIf="!submitted">
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input
+              type="text"
+              class="form-control"
+              id="title"
+              required
+              [(ngModel)]="tutorial.title"
+              name="title"
+            />
+          </div>
+      
+          <div class="form-group">
+            <label for="description">Description</label>
+            <input
+              class="form-control"
+              id="description"
+              required
+              [(ngModel)]="tutorial.description" 
+              name="description"
+            />
+          </div>
+
+            <button (click)="saveTutorial()" class="btn btn-success">Submit</button>
+        </div>
+      
+        <div *ngIf="submitted">
+          <h4>You submitted successfully!</h4>
+          <button class="btn btn-success" (click)="newTutorial()">Add</button>
+        </div>
+      </div> -->
+
+      <mat-slider min="1" max="5" step="0.5" value="1.5">
+          <input matSliderThumb>
+      </mat-slider>
+
+      <mat-form-field>
+        <mat-label>Select an option</mat-label>
+        <!-- selected -->
+        <mat-select >
+          <mat-option>None</mat-option>
+          <mat-option value="option1">Option 1</mat-option>
+          <mat-option value="option2">Option 2</mat-option>
+          <mat-option value="option3">Option 3</mat-option>
+        </mat-select>
+      </mat-form-field>
+      
+      <!-- <p>You selected: {{selected}}</p> -->
       

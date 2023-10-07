@@ -1,0 +1,25 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Nixie One,cursive;
+}
+
+.size{
+    width: 1000px;
+}
+
+.mat-mdc-slider{
+    width: 1000px;
+}
+
+#one{
+    background-color: #3730a3;
+    color: white;
+}
+
+#second {
+    background-color: #3730a3;
+    color: white;
+}

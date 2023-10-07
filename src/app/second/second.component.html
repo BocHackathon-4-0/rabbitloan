@@ -1,1 +1,105 @@
-<p>second works!</p>
+<div class="container-fluid p-0">
+    <section id="one">
+        <div class="container">
+            <h1>Looking for finance ?</h1>
+            <h2>We have your back</h2>
+            <h3>Tell us the ammount</h3>
+            
+            <div class="size mt-5 mb-5">
+                <mat-form-field>
+                    <mat-label>Looking for a loan</mat-label>
+                    <mat-select>
+                    <mat-option *ngFor="let loan of loans" [value]="loan.value">
+                        {{loan.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            </div>
+            
+        <div class="size">
+            <h2>Money needed</h2>
+            <mat-slider min="0" max="100000" step="1000" showTickMarks discrete [displayWith]="formatLabel">
+            <input matSliderThumb>
+        </mat-slider>
+
+        <h2>Payback Period</h2>
+            <mat-slider min="1" max="120" step="1" showTickMarks discrete [displayWith]="formatLabel">
+            <input matSliderThumb>
+        </mat-slider>
+           
+        <h2>Monthly Income</h2>
+            <mat-slider min="1000" max="100000" step="1000" showTickMarks discrete [displayWith]="formatLabel">
+            <input matSliderThumb>
+        </mat-slider>
+
+        <h2>Monthly Expenses</h2>
+            <mat-slider min="1000" max="100000" step="1000" showTickMarks discrete [displayWith]="formatLabel">
+            <input matSliderThumb>
+        </mat-slider>
+
+        <div class="container text-center mt-5">
+            <div class="row align-items-start">
+              <div class="col">
+                <h2>Total Money</h2>
+                <h4>30 months</h4> 
+              </div>
+              <div class="col">
+                <h2>Payback Period</h2>
+                <h4>30 months</h4>
+              </div>
+              <div class="col">
+                <h2>Interest</h2>
+                <h4>5%</h4>
+              </div>
+              <div class="col">
+                <h2>Cover</h2>
+                <h4>20x</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>         
+    </section>
+    
+    <section> 
+        <div class="container">
+            <h1>Lets get personal ?</h1>
+            <h2>Give us some information</h2>
+            <h3>Are you a Jinius Customer</h3>
+        
+        <div class="size mt-5 mb-5">
+            <mat-checkbox class="example-margin">Absolutely</mat-checkbox>
+        </div>
+        
+        <h3 class="mt-2 mb-3">Please give us your email</h3>
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Placeholder">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+
+        <h3 class="mt-2 mb-3">Please give us UID</h3>
+        <mat-form-field appearance="outline">
+            <mat-label>Unique Customer</mat-label>
+            <input matInput placeholder="Placeholder">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+
+        <h3 class="mt-2 mb-3">Please give us your Phone Number</h3>
+        <mat-form-field appearance="outline">
+            <mat-label>Unique Identification</mat-label>
+            <input matInput placeholder="Placeholder">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>  
+        </div>  
+    </section> 
+
+    
+    <section>
+        <div class="container">
+            <h1>Thats it ?</h1>
+            <h2>We will reach out to you through your dashboard in Jinius</h2>
+            <button mat-raised-button color="primary">Please Submit</button>
+        </div>
+    </section>
+</div>
