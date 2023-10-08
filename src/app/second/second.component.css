@@ -20,6 +20,26 @@ section {
 }
 
 #second {
-    background-color: #3730a3;
+    background-color: #be185d;
     color: white;
+}
+
+#third {
+    background-color: #be185d;
+    color: white;
+}
+h1
+{
+    font-family: Nixie One,cursive;
+    font-size:50px;
+}
+
+h2 {
+    font-family: Nixie One,cursive;
+    font-size: 30px;
+}
+
+h3{
+    font-family: Nixie One,cursive;
+    font-size: 40px;
 }

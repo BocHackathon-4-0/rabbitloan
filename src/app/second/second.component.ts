@@ -14,11 +14,10 @@ export interface getLoan {
 })
 export class SecondComponent {
 
-  loans: getLoan[] = [
-    {value: 'steak-0', viewValue: 'Microloan'},
-    {value: 'pizza-1', viewValue: 'Corporate'},
-    {value: 'tacos-2', viewValue: 'Startup'}
-  ];
+  loans = ['Microloan', 'Startup', 'Car', 'Corporate'];
+  
+  // Define a selected fruit (optional)
+  selectedLoan: string = '';
 
   formatLabel(value: number): string {
     if (value >= 1000) {
